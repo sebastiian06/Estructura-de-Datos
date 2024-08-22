@@ -1,0 +1,97 @@
+#En C#, los tipos de datos se dividen en dos categorías principales: **tipos de valor** y **tipos de referencia**. Cada tipo tiene características específicas y se usa para diferentes propósitos. Aquí te explico cada categoría y sus componentes principales:
+
+### Tipos de Valor
+
+Los tipos de valor en C# almacenan datos directamente y son más eficientes en términos de memoria y rendimiento. Los tipos de valor incluyen:
+
+1. **Numéricos Enteros**:
+   - **`byte`**: 
+     - Tamaño: 8 bits
+     - Rango: 0 a 255
+     - Ejemplo: `byte b = 255;`
+   - **`sbyte`**: 
+     - Tamaño: 8 bits
+     - Rango: -128 a 127
+     - Ejemplo: `sbyte sb = -128;`
+   - **`short`**: 
+     - Tamaño: 16 bits
+     - Rango: -32,768 a 32,767
+     - Ejemplo: `short s = 32000;`
+   - **`ushort`**: 
+     - Tamaño: 16 bits
+     - Rango: 0 a 65,535
+     - Ejemplo: `ushort us = 65535;`
+   - **`int`**: 
+     - Tamaño: 32 bits
+     - Rango: -2^31 a 2^31-1
+     - Ejemplo: `int i = 100000;`
+   - **`uint`**: 
+     - Tamaño: 32 bits
+     - Rango: 0 a 4,294,967,295
+     - Ejemplo: `uint ui = 4000000000U;`
+   - **`long`**: 
+     - Tamaño: 64 bits
+     - Rango: -2^63 a 2^63-1
+     - Ejemplo: `long l = 10000000000L;`
+   - **`ulong`**: 
+     - Tamaño: 64 bits
+     - Rango: 0 a 18,446,744,073,709,551,615
+     - Ejemplo: `ulong ul = 18446744073709551615UL;`
+
+2. **Numéricos en Punto Flotante**:
+   - **`float`**: 
+     - Tamaño: 32 bits
+     - Rango: ±1.5 x 10^−45 a ±3.4 x 10^38 (con precisión de aproximadamente 7 dígitos decimales)
+     - Ejemplo: `float f = 3.14f;`
+   - **`double`**: 
+     - Tamaño: 64 bits
+     - Rango: ±5.0 x 10^−324 a ±1.7 x 10^308 (con precisión de aproximadamente 15 dígitos decimales)
+     - Ejemplo: `double d = 3.14159265358979;`
+
+3. **Tipo de Datos Decimal**:
+   - **`decimal`**: 
+     - Tamaño: 128 bits
+     - Rango: ±1.0 x 10^−28 a ±7.9 x 10^28 (con precisión de aproximadamente 28-29 dígitos decimales)
+     - Ejemplo: `decimal dec = 19.99M;`
+
+4. **Tipo de Datos de Carácter**:
+   - **`char`**: 
+     - Tamaño: 16 bits
+     - Rango: 0 a 65,535 (caracteres Unicode)
+     - Ejemplo: `char c = 'A';`
+
+5. **Tipo de Datos Booleano**:
+   - **`bool`**: 
+     - Tamaño: No especificado en términos de bits, pero normalmente 1 byte en la práctica.
+     - Valores posibles: `true` o `false`
+     - Ejemplo: `bool isTrue = true;`
+
+### Tipos de Referencia
+
+Los tipos de referencia almacenan una referencia a un objeto y no el objeto en sí. Los tipos de referencia incluyen:
+
+1. **Clases**:
+   - Definidas por el usuario o predefinidas por .NET. Las clases pueden contener campos (variables), métodos y propiedades.
+   - Ejemplo: `string`, `List<T>`, `MyClass`.
+
+2. **Interfaces**:
+   - Definen un contrato que las clases pueden implementar. No contienen implementación por sí mismas.
+   - Ejemplo: `IEnumerable<T>`, `IDisposable`.
+
+3. **Arrays**:
+   - Estructuras que almacenan una colección de elementos del mismo tipo.
+   - Ejemplo: `int[] numbers = {1, 2, 3};`
+
+4. **Delegados**:
+   - Tipos que representan métodos y permiten pasar métodos como parámetros.
+   - Ejemplo: `Action<int>`, `Func<string, bool>`.
+
+5. **Enumeraciones (Enums)**:
+   - Definen un conjunto de constantes con nombre.
+   - Ejemplo: `enum Day { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }`
+
+6. **Tipos Especiales**:
+   - **`object`**: La clase base para todos los tipos en .NET. Todos los tipos de referencia heredan de `object`.
+   - Ejemplo: `object obj = "Hello World";`
+
+En C#, los tipos primitivos y de valor son tratados de manera eficiente en términos de memoria y rendimiento, mientras que los tipos de referencia permiten una mayor flexibilidad y funcionalidad avanzada mediante la manipulación de objetos y estructuras de datos.
