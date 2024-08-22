@@ -1,0 +1,96 @@
+#En PHP, los tipos de datos se dividen en dos categorías principales: **tipos escalar** y **tipos compuestos**. Cada categoría incluye diferentes tipos que se usan para manejar y almacenar datos. Aquí te explico cada uno:
+
+### Tipos Escalares
+
+Los tipos escalares en PHP representan valores simples y son fundamentales para las operaciones básicas. Incluyen:
+
+1. **`int` (Entero)**:
+   - Representa números enteros, tanto positivos como negativos.
+   - Ejemplo: `$age = 30;`
+
+2. **`float` (Número de Punto Flotante)**:
+   - Representa números con decimales.
+   - Ejemplo: `$price = 19.99;`
+
+3. **`string` (Cadena de Texto)**:
+   - Representa una secuencia de caracteres.
+   - Ejemplo: `$name = "Alice";`
+
+4. **`bool` (Booleano)**:
+   - Representa valores lógicos, `true` o `false`.
+   - Ejemplo: `$isActive = true;`
+
+5. **`null`**:
+   - Representa una variable sin valor. Es útil para indicar que una variable no tiene un valor asignado.
+   - Ejemplo: `$value = null;`
+
+### Tipos Compuestos
+
+Los tipos compuestos en PHP permiten almacenar y manipular colecciones de datos más complejas:
+
+1. **`array`**:
+   - Representa una colección de valores en un solo variable. Los arrays en PHP pueden ser indexados numéricamente o asociativos (con claves de tipo string).
+   - Ejemplo:
+     ```php
+     // Array indexado
+     $numbers = [1, 2, 3, 4, 5];
+     
+     // Array asociativo
+     $person = ["name" => "Alice", "age" => 30];
+     ```
+
+2. **`object`**:
+   - Representa una instancia de una clase. Los objetos pueden tener propiedades y métodos definidos por la clase.
+   - Ejemplo:
+     ```php
+     class Person {
+         public $name;
+         public $age;
+         
+         public function __construct($name, $age) {
+             $this->name = $name;
+             $this->age = $age;
+         }
+         
+         public function greet() {
+             return "Hello, my name is " . $this->name;
+         }
+     }
+     
+     $person = new Person("Alice", 30);
+     ```
+
+### Tipos Especiales
+
+1. **`callable`**:
+   - Representa una función o método que puede ser llamado. Puede ser una cadena con el nombre de una función, un array con el objeto y el método, o una función anónima (closure).
+   - Ejemplo:
+     ```php
+     function greet($name) {
+         return "Hello, $name!";
+     }
+
+     $callback = 'greet';
+     echo $callback('Alice'); // Llama a la función greet
+     ```
+
+2. **`iterable`**:
+   - Representa un valor que puede ser iterado, como un array o un objeto que implementa `Traversable` (de `Iterator` o `IteratorAggregate`).
+   - Ejemplo:
+     ```php
+     function printIterable(iterable $items) {
+         foreach ($items as $item) {
+             echo $item . "\n";
+         }
+     }
+
+     printIterable([1, 2, 3]);
+     ```
+
+### Conversión Automática de Tipos
+
+PHP es un lenguaje de tipado débil y realiza conversiones automáticas entre tipos en situaciones donde se espera un tipo diferente. Por ejemplo, puedes sumar un número a una cadena que representa un número y PHP lo convertirá automáticamente para realizar la operación.
+
+### Resumen
+
+En PHP, los tipos de datos incluyen tanto tipos escalares (para valores simples) como tipos compuestos (para colecciones y estructuras más complejas). La flexibilidad en el manejo de tipos y la capacidad para manejar datos de diversas formas hacen de PHP un lenguaje potente para el desarrollo web y de aplicaciones.
