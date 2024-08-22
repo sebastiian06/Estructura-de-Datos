@@ -1,0 +1,77 @@
+#En JavaScript, los tipos de datos se dividen principalmente en dos categorías: **tipos primitivos** y **tipos de referencia**. Cada categoría tiene características y usos específicos.
+
+### Tipos Primitivos
+
+Los tipos primitivos en JavaScript representan valores simples y son inmutables. Aquí están los seis tipos primitivos principales:
+
+1. **`Number`**:
+   - Representa tanto enteros como números en punto flotante.
+   - Ejemplo: `let num = 42;` o `let pi = 3.14;`
+
+2. **`BigInt`**:
+   - Representa números enteros que pueden ser muy grandes, más allá del rango de `Number`.
+   - Ejemplo: `let bigIntNum = 1234567890123456789012345678901234567890n;` (Nota: el sufijo `n` indica un valor de tipo `BigInt`)
+
+3. **`String`**:
+   - Representa una secuencia de caracteres.
+   - Ejemplo: `let str = "Hello, world!";`
+
+4. **`Boolean`**:
+   - Representa un valor lógico de `true` o `false`.
+   - Ejemplo: `let isActive = true;`
+
+5. **`Symbol`**:
+   - Representa un valor único e inmutable, principalmente utilizado como identificadores únicos para propiedades de objetos.
+   - Ejemplo: `let sym = Symbol('description');`
+
+6. **`undefined`**:
+   - Indica que una variable ha sido declarada pero aún no ha sido asignada a un valor.
+   - Ejemplo: `let x; console.log(x); // undefined`
+
+7. **`null`**:
+   - Representa la ausencia intencionada de un valor.
+   - Ejemplo: `let obj = null;`
+
+### Tipos de Referencia
+
+Los tipos de referencia en JavaScript almacenan una referencia a un objeto y no el objeto en sí. Los tipos de referencia incluyen:
+
+1. **`Object`**:
+   - Es la base para todos los objetos en JavaScript. Incluye objetos literales y objetos creados con el constructor `Object`.
+   - Ejemplo: `let obj = { name: "Alice", age: 25 };`
+
+2. **`Array`**:
+   - Representa una colección ordenada de elementos. Los arrays en JavaScript pueden contener elementos de diferentes tipos.
+   - Ejemplo: `let arr = [1, 2, 3, "four"];`
+
+3. **`Function`**:
+   - Las funciones en JavaScript son objetos de primera clase y pueden ser tratadas como valores.
+   - Ejemplo: `function greet(name) { return "Hello, " + name; }`
+
+4. **`Date`**:
+   - Representa fechas y horas.
+   - Ejemplo: `let today = new Date();`
+
+5. **`RegExp`**:
+   - Representa expresiones regulares utilizadas para buscar y manipular cadenas.
+   - Ejemplo: `let pattern = /ab+c/;`
+
+6. **`Map`**:
+   - Es una colección de pares clave-valor. A diferencia de los objetos, las claves en un `Map` pueden ser de cualquier tipo.
+   - Ejemplo: `let map = new Map(); map.set('key', 'value');`
+
+7. **`Set`**:
+   - Es una colección de valores únicos, sin duplicados.
+   - Ejemplo: `let set = new Set([1, 2, 3, 2]); // Set(3) {1, 2, 3}`
+
+8. **`WeakMap`**:
+   - Similar a `Map`, pero las claves deben ser objetos y no previene la recolección de basura de las claves.
+   - Ejemplo: `let weakMap = new WeakMap();`
+
+9. **`WeakSet`**:
+   - Similar a `Set`, pero solo permite objetos como valores y las entradas no previenen la recolección de basura.
+   - Ejemplo: `let weakSet = new WeakSet();`
+
+### Resumen
+
+En JavaScript, los tipos primitivos son útiles para valores simples y directos, mientras que los tipos de referencia permiten una manipulación más avanzada de datos mediante objetos y colecciones. La flexibilidad en la definición de tipos y la capacidad para usar tanto primitivos como objetos hacen de JavaScript un lenguaje potente y versátil para el desarrollo web y de aplicaciones.
