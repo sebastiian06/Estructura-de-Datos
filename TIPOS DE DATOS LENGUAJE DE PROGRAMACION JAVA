@@ -1,6 +1,7 @@
 #En Java, los tipos de datos se dividen en dos categorías principales: **tipos primitivos** y **tipos de referencia**. Cada categoría tiene características distintas y se usa para diferentes propósitos.
 Tipos Primitivos
 
+
 Java define ocho tipos primitivos que representan valores básicos y no son objetos. Cada tipo primitivo tiene un tamaño y un rango específicos. Aquí están los ocho tipos primitivos:
 
 1. **`byte`**: 
