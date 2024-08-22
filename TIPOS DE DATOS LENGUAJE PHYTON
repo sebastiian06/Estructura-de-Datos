@@ -1,0 +1,84 @@
+En Python, los tipos de datos se dividen principalmente en **tipos básicos** y **tipos compuestos**. Python es un lenguaje de tipado dinámico, lo que significa que no necesitas declarar el tipo de una variable explícitamente; el tipo se infiere automáticamente en función del valor asignado. Aquí te presento una visión general de los tipos de datos más comunes en Python:
+
+### Tipos Básicos
+
+1. **`int` (Entero)**:
+   - Representa números enteros, tanto positivos como negativos. En Python 3, los enteros pueden ser de tamaño arbitrario.
+   - Ejemplo: `x = 42`
+
+2. **`float` (Número de Punto Flotante)**:
+   - Representa números con decimales. Utiliza precisión doble (64 bits) en la mayoría de las implementaciones.
+   - Ejemplo: `pi = 3.14159`
+
+3. **`complex` (Número Complejo)**:
+   - Representa números complejos con una parte real y una parte imaginaria.
+   - Ejemplo: `z = 3 + 4j`
+
+4. **`str` (Cadena de Texto)**:
+   - Representa una secuencia de caracteres. Las cadenas son inmutables en Python.
+   - Ejemplo: `name = "Alice"`
+
+5. **`bool` (Booleano)**:
+   - Representa valores lógicos, `True` o `False`.
+   - Ejemplo: `is_active = True`
+
+6. **`NoneType`**:
+   - Representa la ausencia de valor o un valor nulo. En Python, se usa el objeto especial `None`.
+   - Ejemplo: `value = None`
+
+### Tipos Compuestos
+
+1. **`list` (Lista)**:
+   - Representa una colección ordenada de elementos que pueden ser de diferentes tipos. Las listas son mutables.
+   - Ejemplo: `numbers = [1, 2, 3, 4]`
+
+2. **`tuple` (Tupla)**:
+   - Representa una colección ordenada de elementos que pueden ser de diferentes tipos. Las tuplas son inmutables.
+   - Ejemplo: `coordinates = (10, 20)`
+
+3. **`set` (Conjunto)**:
+   - Representa una colección no ordenada de elementos únicos. Los conjuntos son útiles para operaciones de teoría de conjuntos.
+   - Ejemplo: `unique_numbers = {1, 2, 3}`
+
+4. **`dict` (Diccionario)**:
+   - Representa una colección desordenada de pares clave-valor. Las claves deben ser inmutables y únicas, mientras que los valores pueden ser de cualquier tipo.
+   - Ejemplo: `person = {"name": "Alice", "age": 30}`
+
+5. **`byte` y `bytearray`**:
+   - **`bytes`**: Representa una secuencia inmutable de bytes.
+     - Ejemplo: `data = b"hello"`
+   - **`bytearray`**: Representa una secuencia mutable de bytes.
+     - Ejemplo: `data = bytearray([1, 2, 3])`
+
+### Tipos Especiales
+
+1. **`range`**:
+   - Representa una secuencia inmutable de números enteros que se utiliza comúnmente en bucles.
+   - Ejemplo: `for i in range(5): print(i)`
+
+2. **`frozenset`**:
+   - Representa un conjunto inmutable. Similar a `set`, pero sus elementos no pueden ser modificados después de la creación.
+   - Ejemplo: `immutable_set = frozenset([1, 2, 3])`
+
+### Conversión de Tipos
+
+Python proporciona funciones incorporadas para convertir entre tipos:
+- `int()`, `float()`, `str()`, `bool()`, `list()`, `tuple()`, `set()`, `dict()`, etc.
+
+### Ejemplos de Conversión
+
+```python
+# Conversión de tipo
+a = 10
+b = float(a)  # b = 10.0
+c = str(a)    # c = '10'
+d = bool(a)   # d = True
+
+# Conversión a listas y tuplas
+e = [1, 2, 3]
+f = tuple(e)  # f = (1, 2, 3)
+```
+
+### Resumen
+
+Python ofrece una variedad de tipos de datos básicos y compuestos que permiten trabajar con diferentes tipos de información de manera flexible y eficiente. La combinación de tipos escalares, compuestos y especiales proporciona un rico conjunto de herramientas para el desarrollo de aplicaciones en Python.
