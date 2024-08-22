@@ -1,0 +1,69 @@
+#En Java, los tipos de datos se dividen en dos categorías principales: **tipos primitivos** y **tipos de referencia**. Cada categoría tiene características distintas y se usa para diferentes propósitos.
+Tipos Primitivos
+
+Java define ocho tipos primitivos que representan valores básicos y no son objetos. Cada tipo primitivo tiene un tamaño y un rango específicos. Aquí están los ocho tipos primitivos:
+
+1. **`byte`**: 
+   - Tamaño: 8 bits
+   - Rango: -128 a 127
+   - Ejemplo: `byte b = 100;`
+
+2. **`short`**: 
+   - Tamaño: 16 bits
+   - Rango: -32,768 a 32,767
+   - Ejemplo: `short s = 10000;`
+
+3. **`int`**: 
+   - Tamaño: 32 bits
+   - Rango: -2^31 a 2^31-1
+   - Ejemplo: `int i = 100000;`
+
+4. **`long`**: 
+   - Tamaño: 64 bits
+   - Rango: -2^63 a 2^63-1
+   - Ejemplo: `long l = 10000000000L;` (Nota: el sufijo `L` es opcional pero recomendado para literales de tipo `long`)
+
+5. **`float`**: 
+   - Tamaño: 32 bits
+   - Rango: Aproximadamente ±1.4E-45 a ±3.4E38 (con una precisión de aproximadamente 7 dígitos decimales)
+   - Ejemplo: `float f = 3.14f;` (Nota: el sufijo `f` es obligatorio para literales de tipo `float`)
+
+6. **`double`**: 
+   - Tamaño: 64 bits
+   - Rango: Aproximadamente ±4.9E-324 a ±1.8E308 (con una precisión de aproximadamente 15 dígitos decimales)
+   - Ejemplo: `double d = 3.14159;`
+
+7. **`char`**: 
+   - Tamaño: 16 bits
+   - Rango: 0 a 65,535 (para representar caracteres Unicode)
+   - Ejemplo: `char c = 'A';`
+
+8. **`boolean`**: 
+   - Tamaño: No especificado (generalmente 1 bit en la práctica)
+   - Valores posibles: `true` o `false`
+   - Ejemplo: `boolean b = true;`
+
+### Tipos de Referencia
+
+Los tipos de referencia son aquellos que hacen referencia a objetos y no a valores directos. Incluyen:
+
+1. **Clases**: 
+   - Definidas por el usuario o predefinidas por Java, las clases pueden contener campos (variables) y métodos.
+   - Ejemplo: `String`, `ArrayList`, `Person` (si se define una clase `Person`).
+
+2. **Interfaces**: 
+   - Tipos que definen métodos que una clase puede implementar.
+   - Ejemplo: `Runnable`, `Serializable`.
+
+3. **Arrays**: 
+   - Estructuras que almacenan una colección de elementos del mismo tipo.
+   - Ejemplo: `int[] numbers = {1, 2, 3};`
+
+4. **Enumeraciones**: 
+   - Tipos especiales que definen un conjunto fijo de constantes.
+   - Ejemplo: `enum Day { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY }`
+
+5. **Objetos**: 
+   - Instancias de clases que pueden tener métodos y atributos.
+
+En Java, los tipos primitivos son más eficientes en términos de rendimiento y uso de memoria porque no implican la sobrecarga de objetos. Los tipos de referencia, por otro lado, ofrecen flexibilidad y funcionalidades avanzadas mediante la manipulación de objetos y estructuras de datos más complejas.
