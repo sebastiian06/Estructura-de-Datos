@@ -1,0 +1,39 @@
+import javax.swing.*;
+import java.util.Scanner;
+
+public class ejemplo1{
+    public static void main(String arg[]){
+
+        Scanner scanner = new Scanner(System.in);
+        Double notaparcial;
+        Double notatrabajo;
+        Double notaatuoycoa;
+        Double definitiva;
+        String mensaje = "Error en la entrada de nota";
+        String nombre1;
+
+        System.out.print("Digite su nombre: ");
+        nombre1 = scanner.next();
+
+        System.out.print(nombre1+" Digite la nota del parcial: ");
+        notaparcial = scanner.nextDouble();
+        if (notaparcial>=0&&notaparcial<=5){
+            System.out.print(nombre1+" Digite la nota del trabajo: ");
+            notatrabajo = scanner.nextDouble();
+            if (notatrabajo>=0&&notatrabajo<=5){
+                System.out.print(nombre1+" Digite la nota de la autoevaluación y de la coevaluación: ");
+                notaatuoycoa = scanner.nextDouble();
+                if (notaatuoycoa>=0&&notaatuoycoa<=5){
+                        definitiva = ((notaparcial*0.7)+(notatrabajo*0.25)+(notaatuoycoa*0.05));
+                        System.out.println(nombre1+ " la nota definitiva es: "+definitiva);
+                }else{
+                    System.out.println(mensaje);
+                }
+            }else{
+                System.out.println(mensaje);
+            }
+        }else{
+            System.out.println(mensaje);
+        }
+    }
+}
